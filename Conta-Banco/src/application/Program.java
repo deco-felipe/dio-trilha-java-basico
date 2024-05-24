@@ -8,28 +8,25 @@ import entities.ContaBanco;
 public class Program {
 
 	public static void main(String[] args) throws Exception {
-		/*
-		 * Locale.setDefault(Locale.US); Scanner sc = new Scanner(System.in);
-		 * 
-		 * System.out.print("digite o numero da conta: "); int numeroConta =
-		 * sc.nextInt(); sc.nextLine();
-		 * System.out.print("Digite o número da Agência: "); String numeroAgencia =
-		 * sc.nextLine(); System.out.print("digite seu nome seu nome: "); String nome =
-		 * sc.nextLine();
-		 * 
-		 * 
-		 * ContaBanco contaBanco = new ContaBanco(numeroConta, numeroAgencia, nome);
-		 * System.out.println(contaBanco.toString());
-		 * 
-		 * 
-		 * sc.close();
-		 */
+		
+		  Locale.setDefault(Locale.US); Scanner sc = new Scanner(System.in);
+		  
+		  System.out.print("digite o numero da conta: "); int numeroConta =
+		  sc.nextInt(); sc.nextLine();
+		  System.out.print("Digite o número da Agência: "); String numeroAgencia =
+		  sc.nextLine(); System.out.print("digite seu nome seu nome: "); String nome =
+		  sc.nextLine();
+		  
+		  
+		  ContaBanco contaBanco = new ContaBanco(numeroConta, numeroAgencia, nome);
+		  System.out.println(contaBanco.toString());
+		  
+		
+		  
+		  sc.close();
+		 
 
-		int numero = 1;
-		for (int x=1; x<2; x++){
-            numero = numero + x;
-        }
-        System.out.println("O valor de número é: " + numero);
+		
 	}
 
 }
